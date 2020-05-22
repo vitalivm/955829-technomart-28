@@ -60,7 +60,30 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,<br/> заехав в наш офис:</p>
           <p><a href=""><img src="img/map-small.png" width="300" height="158" alt="Карта проезда"></a></p>
+          <div class="popupMapBig">
+            <img src="img/map-big.png" width="943" height="449" alt="Карта проезда в наш офис">
+            <button type="button" name="closeMapBig"><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть карту"></button>
+          </div>
           <p><a href="">Заблудились? Напишите нам!</a></p>
+          <div class="popupWriteUS">
+            <form action="https://echo.htmlacademy.ru/courses" method="post">
+                <div class="popupWriteUsItem">
+                  <label>Ваше имя:
+                    <input type="text" name="name" placeholder="Имя Фамилия" required>
+                  </label>
+                  <label>Ваш e-mail:
+                    <input type="email" name="email" placeholder="email@example.com" required>
+                  </label>
+                  <label>Тест письма:
+                    <textarea rows="5" placeholder="В свободной форме" required></textarea>
+                  </label>
+                </div>
+                <div class="popupWriteUsItem">
+                  <button type="submit">Оформить заказ</button>
+                </div>
+            </form>
+            <button type="button" name="closeWriteUS"><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть форму"></button>
+          </div>
         </section>
       </div>
     </main>

@@ -56,22 +56,26 @@
       <section>
         <h1>Перфораторы</h1>
         <aside>
-          <div class="widgetBrand">
-            <ul>
-              <li><input type="checkbox" name="bosch" id="brandCheck1" checked><label for="brandCheck1">BOSCH</label></li>
-              <li><input type="checkbox" name="interskol" id="brandCheck2"><label for="brandCheck2">Интерскол</label></li>
-              <li><input type="checkbox" name="makita" id="brandCheck3" checked><label for="brandCheck3">Makita</label></li>
-              <li><input type="checkbox" name="dewalt" id="brandCheck4"><label for="brandCheck4">Dewalt</label></li>
-              <li><input type="checkbox" name="hitachi" id="brandCheck5"><label for="brandCheck5">Hitachi</label></li>
-            </ul>
-          </div>
-          <div class="widgetPower">
-            <ul>
-              <li><input type="radio" name="akkum" id="akkumPower"><label for="akkumPower">Аккумуляторные</label></li>
-              <li><input type="radio" name="setevoe" id="setevoePower"><label for="setevoePower">Сетевые</label></li>
-            </ul>
-          </div>
-          <button type="submit" name="showResult">Показать</button>
+          <form action="https://echo.htmlacademy.ru/courses" method="get">
+            <fieldset class="widgetBrand">
+               <legend>Производители:</legend>
+              <ul>
+                <li><input type="checkbox" name="bosch" id="brandCheck1" checked><label for="brandCheck1">BOSCH</label></li>
+                <li><input type="checkbox" name="interskol" id="brandCheck2"><label for="brandCheck2">Интерскол</label></li>
+                <li><input type="checkbox" name="makita" id="brandCheck3" checked><label for="brandCheck3">Makita</label></li>
+                <li><input type="checkbox" name="dewalt" id="brandCheck4"><label for="brandCheck4">Dewalt</label></li>
+                <li><input type="checkbox" name="hitachi" id="brandCheck5"><label for="brandCheck5">Hitachi</label></li>
+              </ul>
+            </fieldset>
+            <fieldset class="widgetPower">
+              <legend>Питание:</legend>
+              <ul>
+                <li><input type="radio" name="pitanie" value="akkum" id="akkumPower" checked><label for="akkumPower">Аккумуляторные</label></li>
+                <li><input type="radio" name="pitanie" value="setevoe" id="setevoePower"><label for="setevoePower">Сетевые</label></li>
+              </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
         </aside>
         <div class="wrap">
           <ul class="catalog">
@@ -183,5 +187,13 @@
         </ul>
       </div>
     </footer>
+    <div class="popupCartAdd">
+      <div class="popupCartAddText"><img src="img/icon-mark.svg" width="66" height="66" alt="Товар добален в корзину"> Товар добавлен в корзину!</div>
+      <div class="popupCartAddItem">
+        <a href="#">Оформить заказ</a>
+        <button type="button" name="continueCartAdd">Продолжить покупки</button>
+      </div>
+      <button type="button" name="closeCartAdd"><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть форму"></button>
+    </div>
   </body>
 </html>
