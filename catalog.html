@@ -12,9 +12,13 @@
   <body>
     <header>
       <div class="top-line">
-        <ul>
-          <li><a class="logo"> <img src="img/logo-technomart.png" width="108" height="18" alt="Логотип компании в шапке сайта"></a></li>
-          <li><input type="search" name="search" placeholder="Поиск:"></li>
+        <ul class="top-line-head">
+          <li><a class="logo"><img src="img/logo-technomart.png" width="108" height="18" alt="Логотип компании в шапке сайта"></a></li>
+          <li>
+            <form action="https://echo.htmlacademy.ru/courses" method="get" class="search-form">
+              <input type="search" name="search" placeholder="Поиск:">
+            </form>
+          </li>
           <li><a href="" class="top-link bookmark">Закладки: <span>0</span></a></li>
           <li><a href="" class="top-link cart">Корзина: <span>0</span></a></li>
           <li><a href="" class="top-link order">Оформить заказ</a></li>
@@ -35,7 +39,7 @@
           <a href="">Личный кабинет</a>
         </div>
       </div>
-      <nav>
+      <nav class="nav">
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="">Компания</a></li>
@@ -57,10 +61,10 @@
             <li>Перфораторы</li>
           </ul>
         </nav>
-        <section>
-          <h1>Перфораторы</h1>
-          <aside>
-            <form action="https://echo.htmlacademy.ru/courses" method="get">
+        <section class="inner">
+          <h1 class="catalog-title">Перфораторы</h1>
+          <aside class="side-filter">
+            <form action="https://echo.htmlacademy.ru/courses" method="get" class="form-filter">
               <div class="widget">
                  <span class="widget-title">Производители:</span>
                 <ul>
@@ -83,7 +87,7 @@
           </aside>
           <div class="content">
             <ul class="catalog">
-              <li>
+              <li class="product">
                   <div class="product-head">
                     <img src="img/bfg6000.jpg" width="144" height="128" alt="Фото перфоратора">
                     <a href="">Купить</a>
@@ -95,7 +99,7 @@
                     <div class="actual-price">25500 Р.</div>
                   </div>
               </li>
-              <li>
+              <li class="product">
                   <div class="product-head">
                     <img src="img/bfg6000.jpg" width="144" height="128" alt="Фото перфоратора">
                     <a href="">Купить</a>
@@ -107,7 +111,7 @@
                     <div class="actual-price">25500 Р.</div>
                   </div>
               </li>
-              <li>
+              <li class="product">
                   <div class="product-head">
                     <img src="img/bfg6000.jpg" width="144" height="128" alt="Фото перфоратора">
                     <a href="">Купить</a>
@@ -120,7 +124,7 @@
                   </div>
                   <div class="catalog-new"></div>
               </li>
-              <li>
+              <li class="product">
                   <div class="product-head">
                     <img src="img/bfg3000.jpg" width="144" height="128" alt="Фото перфоратора">
                     <a href="">Купить</a>
@@ -133,7 +137,7 @@
                   </div>
                   <div class="catalog-new"></div>
               </li>
-              <li>
+              <li class="product">
                   <div class="product-head">
                     <img src="img/bfg6000.jpg" width="144" height="128" alt="Фото перфоратора">
                     <a href="">Купить</a>
@@ -145,7 +149,7 @@
                     <div class="actual-price">25500 Р.</div>
                   </div>
               </li>
-              <li>
+              <li class="product">
                   <div class="product-head">
                     <img src="img/bfg2000.jpg" width="144" height="128" alt="Фото перфоратора">
                     <a href="">Купить</a>
@@ -158,7 +162,7 @@
                   </div>
                   <div class="catalog-new"></div>
               </li>
-              <li>
+              <li class="product">
                   <div class="product-head">
                     <img src="img/bfg3000.jpg" width="144" height="128" alt="Фото перфоратора">
                     <a href="">Купить</a>
@@ -171,7 +175,7 @@
                   </div>
                   <div class="catalog-new"></div>
               </li>
-              <li>
+              <li class="product">
                   <div class="product-head">
                     <img src="img/bfg6000.jpg" width="144" height="128" alt="Фото перфоратора">
                     <a href="">Купить</a>
@@ -183,7 +187,7 @@
                     <div class="actual-price">25500 Р.</div>
                   </div>
               </li>
-              <li>
+              <li class="product">
                   <div class="product-head">
                     <img src="img/bfg2000.jpg" width="144" height="128" alt="Фото перфоратора">
                     <a href="">Купить</a>
@@ -211,7 +215,7 @@
           <a href="tel:+78125550555">+7(812)555-05-55</a>
         </div>
         <div class="footer-right">
-          <ul>
+          <ul class="submenu-origin">
             <li><a href="">Компания</a></li>
             <li><a href="">Новости</a></li>
             <li><a href="catalog.html">Каталог</a></li>
