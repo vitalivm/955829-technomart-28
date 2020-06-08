@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Техномарт - Главная страница</title>
@@ -9,14 +9,14 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header>
       <div class="top-line">
         <ul class="container top-line-head">
           <li><a class="logo"><img src="img/logo-technomart.png" width="108" height="18" alt="Логотип компании в шапке сайта"></a></li>
           <li>
             <form action="https://echo.htmlacademy.ru/courses" method="get" class="search-form">
-              <input type="search" name="search" placeholder="Поиск:">
+              <input type="search" class="top-line-search" name="search" placeholder="Поиск:">
             </form>
           </li>
           <li><a href="" class="top-link bookmark">Закладки: <span>0</span></a></li>
@@ -25,14 +25,14 @@
         </ul>
       </div>
       <div class="container header-box">
-        <div class="header-slogan">Интернет-магазин строительных материалов для ремонта</div>
+        <div class="header-slogan">Интернет-магазин строительных материалов<br>и инструментов для ремонта</div>
         <div class="header-contact">
-          <a href="tel:+78125550555">+7(812)555-05-55</a>
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </div>
         <div class="header-login">
-          <a href="">Войти</a>
-          <a href="">Регистрация</a>
+          <a href="" class="login-link">Войти</a>
+          <a href="" class="registration-link">Регистрация</a>
         </div>
       </div>
       <nav class="container nav">
@@ -69,7 +69,7 @@
           <p><a href=""><img src="img/map-small.png" width="300" height="158" alt="Карта проезда" class="map-small"></a></p>
           <div class="popup big-map">
             <img src="img/map-big.png" width="943" height="449" alt="Карта проезда в наш офис">
-            <button type="button" name="close-big-map"><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть карту"></button>
+            <button type="button" name="close-big-map" class="popup-close"><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть карту"></button>
           </div>
           <p><a href="" class="info-link write">Заблудились? Напишите нам!</a></p>
           <div class="popup write-us">
@@ -85,11 +85,11 @@
                     <textarea rows="5" placeholder="В свободной форме" required></textarea>
                   </label>
                 </div>
-                <div class="popup-write-box">
-                  <button type="submit">Оформить заказ</button>
+                <div class="popup-bottom">
+                  <button type="submit" class="info-link">Оформить заказ</button>
                 </div>
             </form>
-            <button type="button" name="close-write"><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть форму"></button>
+            <button type="button" name="close-write" class="popup-close"><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть форму"></button>
           </div>
         </section>
       </div>
