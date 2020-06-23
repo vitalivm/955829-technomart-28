@@ -40,7 +40,7 @@
 /* Global */
 
 body {
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -636,7 +636,7 @@ ul.brand li {
   text-transform: uppercase;
 }
 .main-service p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -725,7 +725,7 @@ ul.brand li {
 .tabs-slide p {
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   width: 315px;
   margin-top: 30px;
 }
@@ -744,7 +744,7 @@ ul.brand li {
   width: 300px;
 }
 .main-info p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding: 0 0 12px;
@@ -791,7 +791,7 @@ ul.brand li {
   cursor: pointer;
   border: none;
   width: 100%;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
 }
 .info-link:active {
@@ -863,7 +863,7 @@ a.write {
   font-size: 13px;
   line-height: 20px;
   text-transform: uppercase;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
 }
 .inner {
     display: flex;
@@ -888,7 +888,7 @@ a.write {
   background-color: var(--basic-background-dark);
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   padding: 10px 20px;
   margin: 0;
   -webkit-border-radius: 5px;
@@ -903,7 +903,7 @@ a.write {
   border: none;
 }
 .side-filter .widget-title {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -954,7 +954,7 @@ a.write {
 }
 .price-controls label {
   text-transform: uppercase;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
 }
@@ -987,7 +987,7 @@ a.write {
   margin-bottom: 8px;
 }
 .filter-option label {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 15px;
   text-transform: uppercase;
   position: relative;
@@ -1068,7 +1068,7 @@ a.write {
 .form-filter button {
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   background: transparent;
   border: 1px solid var(--basic-grey-super-light);
   text-transform: uppercase;
@@ -1097,7 +1097,7 @@ a.write {
 .sort h2, label.sort-label {
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -1248,7 +1248,7 @@ input[name="sort-direction"]:checked + label.direction {
     display: none;
 }
 .product-footer {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
   margin-top: 8px;
 }
@@ -1312,7 +1312,7 @@ input[name="sort-direction"]:checked + label.direction {
   color: var(--basic-black);
   font-size: 13px;
   line-height: 38px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   border-radius: 2px;
   text-transform: uppercase;
 }
@@ -1338,7 +1338,7 @@ input[name="sort-direction"]:checked + label.direction {
   line-height: 30px;
 }
 .catalog-description p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1535,7 +1535,7 @@ ul.submenu-gold a {
 .write-us textarea::placeholder {
   font-size: 13px;
   line-height: 20px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   color: var(--old-price);
 }
 .write-us textarea {
