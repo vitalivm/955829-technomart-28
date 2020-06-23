@@ -270,6 +270,7 @@ header {
   line-height: 45px;
   color: #000;
   display: inline-block;
+  vertical-align: middle;
 }
 .header-login a:hover {
   color: var(--basic-red);
@@ -336,7 +337,7 @@ a.login-link {
 .account-link a:active {
   color: var(--basic-grey-light);
 }
-.header-name button[name="exit-account"] {
+a.exit-account {
   content: "";
   position: absolute;
   width: 20px;
@@ -348,11 +349,10 @@ a.login-link {
   top: 14px;
   right: 17px;
   border: none;
-  outline: none;
   cursor: pointer;
   opacity: 0.3;
 }
-.header-name a::before {
+.header-name a.accont-name::before {
   content: "";
   position: absolute;
   background-image: url(../img/icon-user.svg);
@@ -364,8 +364,8 @@ a.login-link {
   left: 15px;
   opacity: 0.3;
 }
-.header-name a:hover::before,
-.header-name button[name="exit-account"]:hover {
+.header-name a.accont-name:hover::before,
+a.exit-account:hover {
   opacity: 1;
 }
 .nav ul {
@@ -790,7 +790,6 @@ ul.brand li {
   display: inherit;
   cursor: pointer;
   border: none;
-  outline: none;
   width: 100%;
   font-family: 'Cuprum', sans-serif;
   font-size: 14px;
@@ -838,11 +837,12 @@ a.write {
   right: -1px;
   top: 5px;
 }
-.breadcrumbs li:first-child {
+.home {
   width: 14px;
   height: 12px;
   background-image: url(../img/icon-home.svg);
   background-repeat: no-repeat;
+  display: block;
 }
 .breadcrumbs li:first-child::before {
   top: 1px;
@@ -1001,6 +1001,9 @@ a.write {
 .filter-radio:last-of-type {
   margin-bottom: 15px;
 }
+.filter-input:focus + label {
+  outline: auto;
+}
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
@@ -1113,6 +1116,9 @@ label.sort-label {
   border-bottom: 1px dotted var(--basic-red);
   color: var(--03-black);
 }
+label.sort-label:nth-of-type(2) {
+  margin-left: 40px;
+}
 label.sort-label:hover {
   border-bottom: 1px solid var(--basic-red);
   color: var(--basic-black);
@@ -1167,13 +1173,13 @@ input[name="sort-direction"]:checked + label.direction {
   position: relative;
   box-sizing: border-box;
   text-align: center;
-  padding: 22px 17px 21px;
+  padding: 0 17px 21px;
   border: 1px solid var(--basic-grey-super-light);
   margin-bottom: 18px;
 }
 .product-head {
   width: 144px;
-  height: 128px;
+  height: 148px;
   position: relative;
   margin: 0 auto;
 }
@@ -1284,9 +1290,10 @@ input[name="sort-direction"]:checked + label.direction {
   background-size: 70px 70px;
   width: 70px;
   height: 70px;
+  z-index: 10;
 }
 .pagination {
-  margin: 25px 0 0;
+  margin: 30px 0 0;
 }
 .pagination ul {
   padding: 0;
@@ -1324,7 +1331,7 @@ input[name="sort-direction"]:checked + label.direction {
 }
 .catalog-description {
   background-color: var(--basic-background);
-  padding: 36px 10px 57px;
+  padding: 38px 10px 57px;
 }
 .catalog-description h2 {
   font-size: 30px;
@@ -1419,6 +1426,7 @@ ul.submenu-gold a {
   background-repeat: no-repeat;
   background-position: center center;
   display: inline-block;
+  vertical-align: middle;
 }
 .social a:first-child {
   background-image: url(../img/icon-vk.svg);
@@ -1439,6 +1447,7 @@ ul.submenu-gold a {
 }
 .credit li {
   display: inline-block;
+  vertical-align: middle;
 }
 .credit li:first-child {
   margin-right: 51px;
@@ -1460,6 +1469,7 @@ ul.submenu-gold a {
   border-top: 4px solid var(--basic-red);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   background-color: var(--basic-white);
+  z-index: 10;
 }
 .popup-show {
   display: block;
@@ -1469,11 +1479,12 @@ ul.submenu-gold a {
   animation: shake 0.6s;
 }
 .big-map {
-  position: absolute;
+  position: fixed;
   width: 943px;
   height: 449px;
-  left: -7px;
-  top: 14px;
+  left: 50%;
+  top: 50%;
+  margin: -250px 0 0 -470px;
 }
 .popup .popup-close {
   position: absolute;
@@ -1485,12 +1496,13 @@ ul.submenu-gold a {
   cursor: pointer;
 }
 .write-us {
-  position: absolute;
+  position: fixed;
   width: 620px;
   height: 430px;
   left: 50%;
   margin-left: -310px;
-  top: 14px;
+  top: 50%;
+  margin-top: -215px;
 }
 .popup-write-box {
   display: flex;
