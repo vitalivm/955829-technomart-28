@@ -188,7 +188,7 @@ input[type="radio"].visually-hidden {
   left: 20px;
 }
 .cart {
-  padding: 0 25px 0 30px;
+  padding: 0 0 0 33px;
   width: 135px;
 }
 .cart::before {
@@ -580,7 +580,9 @@ span.new-bage {
   text-align: center;
   font-weight: normal;
 }
-.popular-goods,
+.popular-goods {
+  margin-bottom: 70px;
+}
 .popular-brand {
   margin-bottom: 50px;
 }
@@ -635,6 +637,21 @@ ul.brand li {
 }
 ul.brand img {
   display: block;
+}
+li.brand-item:nth-of-type(2) a {
+  margin-top: -10px;
+}
+li.brand-item:nth-of-type(3) a {
+  margin-top: -5px;
+}
+li.brand-item:nth-of-type(4) a {
+  margin-top: -15px;
+}
+li.brand-item:nth-of-type(5) a {
+  margin-left: 5px;
+}
+li.brand-item:last-of-type a {
+  margin-top: -13px;
 }
 .main-service {
   background-color: var(--basic-background);
@@ -777,7 +794,7 @@ ul.brand img {
 .transport li {
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   position: relative;
 }
 .transport li::before {
@@ -809,10 +826,9 @@ ul.brand img {
 }
 a.more-about {
   width: 220px;
-  line-height: 42px;
+  margin: 20px 0 0;
 }
 a.write {
-  line-height: 42px;
 }
 .map-small {
   margin-top: 8px;
@@ -1132,7 +1148,10 @@ label.sort-label {
   color: var(--03-black);
 }
 label.sort-label:nth-of-type(2) {
-  margin-left: 40px;
+  margin-left: 30px;
+}
+label.sort-label:nth-of-type(3) {
+  margin-left: 20px;
 }
 label.sort-label:hover {
   border-bottom: 1px solid var(--basic-red);
@@ -1424,7 +1443,7 @@ ul.submenu-gold a {
 }
 .footer-bottom {
   background-color: var(--basic-grey-dark);
-  padding: 25px 0 34px;
+  padding: 25px 0;
   color: var(--basic-white);
 }
 .footer-bottom-box {
@@ -1593,7 +1612,7 @@ ul.submenu-gold a {
   margin-top: -141px;
   left: 50%;
   margin-left: -310px;
-  z-index: 1;
+  z-index: 11;
 }
 .cart-text {
   font-size: 24px;
