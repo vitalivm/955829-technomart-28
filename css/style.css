@@ -335,10 +335,6 @@ a.login-link {
   border-radius: 50%;
 }
 
-.header-name:active,
-.account-link a:active {
-  color: var(--basic-grey-light);
-}
 a.exit-account {
   content: "";
   position: absolute;
@@ -354,7 +350,10 @@ a.exit-account {
   cursor: pointer;
   opacity: 0.3;
 }
-.header-name a.accont-name::before {
+a.accont-name {
+  color: var(--basic-black);
+}
+a.accont-name::before {
   content: "";
   position: absolute;
   background-image: url(../img/icon-user.svg);
@@ -366,9 +365,17 @@ a.exit-account {
   left: 15px;
   opacity: 0.3;
 }
-.header-name a.accont-name:hover::before,
+a.accont-name:hover::before,
 a.exit-account:hover {
   opacity: 1;
+}
+.header-name:active,
+.account-link a:active,
+a.accont-name:active {
+  color: var(--basic-grey-light);
+}
+a.accont-name:active::before {
+  opacity: 0.3;
 }
 .nav ul {
   padding: 0 25px;
